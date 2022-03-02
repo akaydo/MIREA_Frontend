@@ -1,0 +1,150 @@
+button {
+  margin: 20px;
+  width: 130px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: Arial;
+  position: relative;
+}
+
+/* background: linear-gradient(угол наклона, первый цвет и начальная точка, второй цвет и конечная точка); */
+
+.one{
+  background: linear-gradient(0deg, #f598a8 0%, #f6edb2 100%);
+  border: none;
+}
+
+.one:hover{
+  background: linear-gradient(0deg, #aea4e3 0%, #d3ffe8 100%);
+}
+
+.two{
+  background: linear-gradient(21deg, #dd03e4 0%, #5611ec 100%);
+  border: none;
+}
+
+/* box-shadow: смещение по ширине, смещение по высоте, радиус размытия, растяжение, цвет тени; */
+
+.two:hover{
+  box-shadow: 4px 4px 6px 0 rgba(255,255,255,.5),
+  -4px -4px 6px 0 rgba(116, 125, 136, .5),  
+  inset -4px -4px 6px 0 rgba(255,255,255,.2), /* с внешней тени на внутреннюю */
+  inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+
+.three {
+  width: 130px;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  background: red;
+}
+
+.three:hover {
+  color: #f0094a;
+  background: none;
+  box-shadow:none;
+}
+
+.three:before,
+.three:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #f0094a;
+  box-shadow:
+  -1px -1px 5px 0px #fff,
+  7px 7px 20px 0px #0003,
+  4px 4px 5px 0px #0002;
+  transition:400ms ease all; /* замедление во время старта и финиша - ease */
+}
+
+.three:after{
+  right:inherit; /* наследует значение свойства от родительского элемента */
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+.three:hover:before,
+.three:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.four {
+  background: linear-gradient(to right, #86fde8, #4dccc6);
+  border: none;
+  z-index: 1;
+}
+
+.four:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  box-shadow:
+  -7px -7px 20px 0px #fff9,
+  -4px -4px 5px 0px #fff9,
+  7px 7px 20px 0px #0002,
+  4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+
+.four:hover {
+  color: #fff;
+}
+
+.four:hover:after {
+  top: 0;
+  height: 100%;
+}
+
+.four:active {
+  top: 2px;
+}
+
+.five {
+  background: #E6E6FA;
+  border: none;
+  z-index: 1;
+}
+
+.five:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #BA55D3;
+  border-radius: 5px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  transition: all 0.3s ease;
+}
+
+.five:hover {
+  color: #fff;
+}
+
+.five:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+.five:active {
+  top: 2px;
+}

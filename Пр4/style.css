@@ -1,0 +1,301 @@
+body{
+	text-align: center;
+}
+
+.formula{
+	font-size: 24px;
+}
+
+.img1{
+	height: 520px;
+	width: 400px;
+	box-shadow: 5px 3px;
+	border-radius: 10px;
+}
+
+.img2{
+	height: 520px;
+	width: 400px;
+	box-shadow: 0 0 0 1px #ccc, /* смещение по ширине, смещение по высоте, радиус размытия, растяжение, цвет тени */
+	0 -20px 15px -5px #FBC16A,
+	20px 0 15px -5px #6BFA76,
+	0 20px 15px -5px #6BA5FA,
+	-20px 0 15px -5px #F4F171;
+	border-radius: 10px;
+	transition: all 0.5s ease;
+}
+
+.img2:hover{ /* псевдокласс */
+	box-shadow: 0 0 0 1px #ccc,
+	0 -20px 10px -5px #6BFA76,
+	20px 0 10px -5px #FBC16A,
+	0 20px 10px -5px #F4F171,
+	-20px 0 10px -5px #6BA5FA;
+	transition: all 0.5s ease;
+}
+
+.block{
+	text-align: left;
+	box-shadow: 
+	-15px -15px 2px -5px rgba(160,82,45,.5),
+    -15px 15px 2px -5px rgba(0,255,255,.5),
+    15px -15px 2px -5px rgba(255,0,0,.5),
+    15px 15px 2px -5px rgba(255,255,0,.5);
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    max-width: 480px;
+   	display: block;
+	margin: 0 auto;
+}
+
+.special{
+	text-align: left;
+	box-shadow: 7px 7px 5px rgba(0,0,0,0.6);
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    max-width: 500px;
+   	display: block;
+	margin: 0 auto;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.choice1,
+.choice2,
+.choice3,
+.choice4,
+.choice5{
+	display: inline;
+}
+
+.card1:after{
+	content: '\2660'; 
+}
+
+.card2:after{
+	content: '\2663';
+}
+
+.card3:after{
+	content: '\2665';
+}
+
+.card4:after{
+	content: '\2666';
+}
+
+.al1,
+.al2,
+.al3,
+.al4,
+.al5,
+.mark1,
+.mark2,
+.frac1_4,
+.frac1_2,
+.frac3_4,
+.an1,
+.an2,
+.an3,
+.an4{
+	display: inline;
+}
+
+.al1:after{
+	content: '\3B1';
+}
+
+.al2:after{
+	content: '\3B2';
+}
+
+.al3:after{
+	content: '\3B3';
+}
+
+.al4:after{
+	content: '\3B4';
+}
+
+.al5:after{
+	content: '\3B5';
+}
+
+.m1:after{
+	content: '\20BD';
+}
+
+.m2:after{
+	content: '\20AC';
+}
+
+.m3:after{
+	content: '\0024';
+}
+
+.mark1:after{
+	content: '\00A9';
+}
+
+.mark2:after{
+	content: '\00AE';
+}
+
+.frac1_4:after{
+	content:'\00BC' ;
+}
+
+.frac1_2:after{
+	content:'\00BD' ;
+}
+
+.frac3_4:after{
+	content:'\00BE';
+}
+
+.an1:after{
+	content: '\00B6';
+}
+
+.an2:after{
+	content: '\00A7';
+}
+
+.an3:after{
+	content: '\2013';
+}
+
+.an4:after{
+	content: '\2014';
+}
+
+.choice1:after{
+	content: '\221E';
+}
+
+.choice2:after{
+	content: '\21D4';
+}
+
+.choice3:after{
+	content: '\21BB';
+}
+
+.choice4:after{
+	content: '\2764';
+}
+
+.choice5:after{
+	content: '\2709';
+}
+
+.box {
+ 	text-align: center;
+}
+
+.centered {
+	display: inline-block;
+	margin: 0; 
+}
+
+.chess-board {
+ 	border-spacing: 0;
+ 	border-collapse: collapse; /*одинарная линия*/
+}
+
+.chess-board th {
+	padding: .5em; 
+}
+
+.chess-board td {
+	border: 1px solid;
+	width: 5em; height: 5em;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.chess-board .white {
+	background: #f0d9b5;
+}
+
+.chess-board .black {
+	background: #b58863; 
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    border: 30px solid #7bcc71;
+    border-radius: 100px;
+    border-right-color: #b8ecbc;
+    background-color: #d8fdd5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}   
+
+.circle span{
+       font-size: xx-large;
+} 
+
+form{
+	text-align: left;
+	margin: 0 40px 0 40px;
+}
+
+input[required]:valid + label{ /* псевдокласс */
+	background: url(https://upload.wikimedia.org/wikipedia/commons/0/0d/Google_Material_Design_check.svg) ;
+}
+
+.required {
+	display: inline-block;
+	height: 20px;
+	width: 20px;
+	background: url(https://img.icons8.com/ios-filled/20/fa314a/asterisk.png) ;
+}
+
+.square{
+	position: relative;
+	width: 25%;
+	background: #FF6347;
+	margin: 0 auto;
+}
+
+.square:before{
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.adapt{
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: #f3efef;	
+}
+
+.adapt div{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+
+.adapt span{
+	display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: #fbf7f7;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+input[type="checkbox"]:checked + span1 {
+	background: yellow;
+}

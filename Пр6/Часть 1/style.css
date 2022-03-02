@@ -1,0 +1,194 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    background-size: 100%;
+}
+
+.item_1, .item_2 {
+    padding: 8px;
+    background-color: linen;
+    border-color: darkgray;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px black;
+}
+
+.task_1 {
+    display: grid;
+    height: 100vh; /* Полная высота */
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+
+@media (min-width: 720px) {
+    .task_1 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+}
+
+@media (min-width: 720px) {
+ 
+    .item_1 {
+        grid-column: 1 / span 1;
+    }
+    
+    .item_2 {
+        grid-column: 2 / span 2;
+    }
+}
+
+
+.task_2 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto auto;
+    gap: 12px;
+}
+
+.item_A {
+    grid-column: 1 / span 2;
+}
+
+.item_B {
+    grid-column: 1 / span 2;
+}
+
+.item_C {
+    grid-column: 1 / span 1;
+}
+
+.item_D {
+    grid-column: 2 / span 1;
+}
+
+.item_E {
+    grid-column: 1 / span 2;
+}
+
+@media (min-width: 720px) {
+    .task_2 {
+      grid-template-columns: repeat(3, 1fr); /* 3 блока в 1 ряд */
+      grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 720px) {
+ 
+    .task_2 .item_A {
+        grid-column: 1 / span 3;
+    }
+    
+    .task_2 .item_B {
+        grid-column: 1 / span 2;
+    }
+    
+    .task_2 .item_C {
+        grid-column: 1 / span 1;
+    }
+    
+    .task_2 .item_D {
+        grid-column: 2 / span 1;
+    }
+    
+    .task_2 .item_E {
+        grid-row: 2 / span 2;
+        grid-column: 3;
+    }
+}
+
+.item_A, .item_B, .item_C, .item_D, .item_E {
+    padding: 8px;
+    background-color: linen;
+    border-color: darkgray;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px black;
+}
+
+ * {
+    box-sizing: border-box;
+}
+
+
+.item {
+    padding: 8px;
+    background-color: white;
+    border: 4px solid tomato;
+    border-radius: 6px;
+    box-shadow: 0px 2px 6px grey;
+}
+
+.task-3.container {
+  display: grid;
+  height: 100vh;
+
+  grid-template-rows: auto auto 1fr auto auto auto;
+  gap: 24px;
+}
+
+@media (min-width: 720px) {
+  .task-3.container {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+  }
+}
+
+@media (min-width: 720px) {
+ 
+  /* header занимает 12 столбцов */
+  .task-3 .header {
+    grid-column: 1 / span 12;
+  }
+
+  /* navigation занимает 12 столбцов */
+  .task-3 .navigation {
+    grid-column: 1 / span 12;
+  }
+
+  /* main занимает 10 стоблцов, начиная с 3 */
+  .task-3 .main {
+    grid-column: 3 / span 10;
+  }
+
+  /* sidebar занимает 2 столбца, начиная с 1 */
+  .task-3 .sidebar {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+
+  .task-3 .ads {
+    grid-column: 1 / span 2;
+  }
+
+  /* footer занимает 10 столбцов, начиная с 3 */
+  .task-3 .footer {
+    grid-column: 3 / span 10;
+  }
+}
+
+@media (min-width: 1020px) {
+
+  /* navigation занимает 8 столбцов, начиная с 3 */
+  .task-3 .navigation {
+    grid-column: 3 / span 8;
+  }
+
+  .task-3 .main {
+    grid-column: 3 / span 8;
+  }
+
+  /* sidebar начинается со 2 строки и заканчивается на 4 */
+  .task-3 .sidebar {
+    grid-row: 2 / 4
+  }
+
+  /* ads занимает 2 столбца, начиная с 11. Также он занимает со 2 по 4 строку */
+  .task-3 .ads {
+    grid-column: 11 / span 2;
+    grid-row: 2 / 4;
+  }
+
+  .task-3 .footer {
+    grid-column: 1 / span 12;
+  }
+} 

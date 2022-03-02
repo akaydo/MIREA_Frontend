@@ -1,0 +1,194 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Roboto;
+	font-size: 0.9em;
+	color: #666;
+	overflow-y: hidden;
+}
+
+.icon{
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: contain;
+}
+
+.icon.rain{
+	background-image: url("https://yandex-pogoda.static-storage.net/D9B4Z2s49/2d5e0cHgJj/LmBu-hDnZhbJZLXigx-QrBdfN_udODSXkfmXKKv1rEI9qJ0iKBdq-h2goKmlQpcYUEYJDpEpR4YM-zjTZnhjYy59fv4coHdN-F7hvrYgtYIsawqusGERmL3zrXadwrp8JsGIABs1BPE7irOdilumcUtzJDKjJ0WANdks02xYanc3VF3VAf1Scch4oo-5NYu0M28StbBeHpGo2qBJuOmsSy7QoAQjKhH9J6aQkrJ1sW5XZSEhmRFkqwb_P-1Dd39bHGZRzwn4YmvsT4WbuzahjB55AK6NQB63stmRUbr3jkEX_YozCzcA_T-surmDWKBPe0osFZoATZQ_xiXxckh7Wwx9TfYT9FBu8XipuK0jibEaaiK1llkumanGg1en9YpuCO-KDSkpLNEjoYufqVqJQFdEODWrAn6hP9EJ8lNbdUoKfXjfJeB2fPdIs4KCKZO_DGMuvrVBEZu11qtUqsu7ajPRiQEpNjPKFam5qKltvWRqRzcHlxJxsirQOcJZRXt8FkV5-DPZV13XVq6ujD2UmzhIC4OcYRmkmuKoYLfShVMs36siIBQR-RinuJiWb59SbV0jF7QnbKoJzQnRZ2VheQt2c_AS70dr4VOWrrEwiLYSSia1lWcWhL3njFKf-Il-PfeqOy4JD9sFj52ajHiHfEdXJRm2H0WGO_EI-U5XdHsmWFThIeJGcMxXq5qtH7u-DF43h7BlJ7Ou37FJhe-sRCzMuhkuOSfTNZuamoxWnWB6Xw8GtjBztCbeKNRYaUp_CUBO8gDbV3POQquBsj29siVMBoe3Uza_sPG-YIDwu20S0oMaCBcG8Dqbp66TdLddR3ELFIAaTqcU0h_zeH9MaDxRYPEixUxJ8muOhqM2gZw2TwiXmnMZn431jmqH15txNMqWDD4tH9YPloiUg3qHc3dmODe2JFCdItAc9WxGeVEOWGPXKMZOQcJ1lLu1K7a7Kkssn4xDN46b1IhFhOqbSBHzjSstOwbTD6iYuJN3l3NiWgMGtCFBnQPnBt1vW3l5AWFjzTbobFXITKC1pDyfvj5XJqSZcRyNru6dTpvQilAs14srFiY_2jqiqri3ZZFHV1kXHaYHSrYnxBP8dmVJdwl7deIr-E1b0nepvYwyhLcsSDC7g0UfnbPwhUaVyIZEKN2OOwISMvMOvJ6_rFyHWlZkGSurDGWdFO4u0kZDXU0dSUvUF8RxQf5Xq6yTP72WPX0qpbxuGJ6d3Ihmo-KFXR3wkRUqKzPvPJ2RlqZah393aSUcqQxrlxbDBdd2S0hoPVdr0AP5RF7JapS9sQCJkjlZKLWBVDSxq9GyZqr4pWczxIghMCgc4Ti6kr6gTJ9USmgHKb0yao8XwS3va0VrcxdbbM4Mz0ZB5U-PqJsttp4wagCGtUU_ur38kHKI77RsMveLJAM2Cc8Tioahs1WHZ2FIHheJJk2oEfYM8lBZYnkgXFfLHOhsVfZsj6OZF5WUMH08uLFQNZeV-qhEudOlfibpsxU4Eg3_PLydkZxemXR5UiwUnANToybuL-9rUkJ8KWNz_zbibUnFT7iKlyiXuwxJJp-kVTWEh9-tVJnSoEot4bUOKg0XyAadqKuKUZ9me30mJa8MY5IB9T3scHtoWRZ9dP8g21ZdzWOSrJ4ds6E7VC-ys00Im5LUrmab9YZxPfSMLgkaLOk7g7uYo3qcfWBbAyi2K0KtIdM_8290THUmfnn9PvR9WsVCiIW1O5W2OXYmvaNuJLKQ0qFBpPmaczH9mxEpNAjKHIiTo5BXsGdRYyMXjxlIlzf8KM9xfGVNAHp8_SLIVEH0Z4issiObrjlMD6KFXySck_GxYr3Kp0cLxKkvPx4S0jKnhZCscp18W3EcBoUjf4Ec4wHTRF5LXCs");
+}
+
+.icon.clear{
+	background-image: url("https://yandex-pogoda.static-storage.net/D9B4Z2s49/2d5e0cHgJj/LmBu-hDnZhbJZLXigx-QrBdfN_udODSXkfmXKKv1rEI9qJ0iKBdq6x2toL_qboVRfG8vEIw3SZYa8yPUWFBDfiprNOkR0VoY1EObia4poJcFfjOYmFQ5vY_Hpn-Y4oRYB8awAjMxAdQwgLmOg3WwfEBdIRKKDmuCGvkD3UxJal0BdmnMLeF8W-VMjreYNqSPHn4Ml5FBELCw4o1pr-qVcAP-rxc_LS33P7iXmZxppnlTZxczoT1NkSTWLMhgYlhRG35s_DfFS3zxTo2doBuynQVDEpe3WxOBqOCTS6XTuFo01rIGPzUn3RSJuoi9RYl0Z2QGGp4EdIs45xPMYHJDTSJkYM4y2HxQ0liYtZ0fob8eWAunmUAMk679kU-KzKpaCvSsKhMpKuwyo7ihsmmHYEdVBCmrBGOnO8YAwnF0Q3gLUnToIN5MSuh3kq-TCaizFXsTmJtcHLut8K9-jveUWQb0szUIHyLeBaOPlZZUhG91aRQmuBFilwvMHsxHaHt5LERNyQH-UlfEeYaotz2DlihSM5Ckcyi4me22QLfomnsl_ZEXOxIs3zWcjbegU557ZUohO6Ayf6cY8j7WQnVIcyRle9k3yFdvxESLtJoXgbseWzWfhFQtnKvFnEya-bJ6PPOMCRkPBPo3hpqvjnmUfWtIGRKMAEOmMNsMw0BYZlQ1VnbYLOVTUvBYpIeSCZWqLH43rrNHFaGw34tpoOiJah7zvCERPxD9N4a0tZJEnFd0SDYkvh1shh3NMv1Ed35OJndPyS_nRlLrR4aBniCHmyx5Ab-_WTuumdqUfonWl1Md1ZIAMjAQwAOZlp-vebJTZn4cGa0vYLE67ST7U0JvYCVVUdIV22937FaNvbAzhJU8VCGQn2Q_npPds16V8I9GC-OoGRQFHe85iZivgUmlYEVIIgeXGWKyPPkdzmpwZmMDX1LQHetxbdFAkIqXL4CxNEIRvo5yHpi83o5erNW2XSzwvgARBSP_FZmVv4FcmVt0SicWlzhVqBT6AM5Cf19jGUF88gnhSFnfUYejkjucuw9XI5WNRySNt8G0T7Toklssy6M5GDApzRW9h7m1aZpPb1gBHbwcdr014z7-THdFdTZcbNMH-3NQ13mJuJspg60QTReWnVo6lb_PrEOg7JhePN-XNDEEN_kSpr6vqGinQVlVCjKXL1yAG9MY6nZjd0sAYFDvHddTUsZmhIG6OLa3DnI8kZ50Fpif-YZAudm1QRL3rjUtNhb2O6y4r41Jqn1uVwo8nS1xqx7jEP9TQ2lrBHRt2gLgbm3XRLu1vjyStR5PBr2xQhuin_CcYIP3gVgm7a0aIzIx9ROqrremdKtfW0M0PYUsc4Mm_h7cSGllbBp7W9gdzEt2wm6WirI1oZ0texe2ulQ2gIvSi3GI9rJbI96zDw0ZAeEMubevlV-LRmV3IBqiKkSiO8UC1UJeYlcfa3zyCd9odslsrKm4NbahE38CvJd8MLi947dgmuKsYxLllws9Njf6PJa8sYZHkXRmYgUEqR1cgSb-CfVHV11zK0F28xXsS0HgYpOrlwmCuzRqB7yEbhW9rcO2Za7ppGUJ94gRCgwWzwaAs7eURb5-V1EKNJg6R5Ml5SDfYmhDdCtXT8gB5Gdrxmumj40-n7IZfR-Bm3sevp_BkUOV-bFcKdSfKisxCNw1qZi0j16YW1pILRWnGmGROvov-05YQHkpSWDjBuxGce9AgKmaPL27Fm08rbJ5GLG4_p1fl_W4Sxb0sQ4IFgP0Dpq1mJVvoHtlcR8fnQxOhgbkJ9J2fkR8KVVcyh3dY3HGR5ingjyHkglLDa2cejuhm-euYqPPgXko4psUEDgs4j2mkLWOZbJEdHslKIsnUa8a0QX8Z1V1TyQ");
+}
+
+.icon.cloudy{
+	background-image: url("https://yandex-pogoda.static-storage.net/D9B4Z2s49/2d5e0cHgJj/LmBu-hDnZhbJZLXigx-QrBdfN_udODSXkfmXKKv1rEI9qJ0iKBdq-h2goL_qboVRfG8vEIw3SZYa8yPUWFBDfiprNOkR0VoY1EObia4poJcFfjOYmFQ5vY_Hpn-Y4oRYB8awAjMxAdQwgLmOg3WwfEBdIRKKDmuCGvkD3UxJal0BdmnMLeF8W-VMjreYNqSPHn4Ml5FBELCw4o1pr-qVcAP-rxc_LS33P7iXmZxppnlTZxczoT1NkSTWLMhgYlhRG35s_DfFS3zxTo2doBuynQVDEpe3WxOBqOCTS6XTuFo01rIGPzUn3RSJuoi9RYl0Z2QGGp4EdIs45xPMYHJDTSJkYM4y2HxQ0liYtZ0fob8eWAunmUAMk679kU-KzKpaCvSsKhMpKuwyo7ihsmmHYEdVBCmrBGOnO8YAwnF0Q3gLUnToIN5MSuh3kq-TCaizFXsTmJtcHLut8K9-jveUWQb0szUIHyLeBaOPlZZUhG91aRQmuBFilwvMHsxHaHt5LERNyQH-UlfEeYaotz2DlihSM5Ckcyi4me22QLfomnsl_ZEXOxIs3zWcjbegU557ZUohO6Ayf6cY8j7WQnVIcyRle9k3yFdvxESLtJoXgbseWzWfhFQtnKvFnEya-bJ6PPOMCRkPBPo3hpqvjnmUfWtIGRKMAEOmMNsMw0BYZlQ1VnbYLOVTUvBYpIeSCZWqLH43rrNHFaGw34tpoOiJah7zvCERPxD9N4a0tZJEnFd0SDYkvh1shh3NMv1Ed35OJndPyS_nRlLrR4aBniCHmyx5Ab-_WTuumdqUfonWl1Md1ZIAMjAQwAOZlp-vebJTZn4cGa0vYLE67ST7U0JvYCVVUdIV22937FaNvbAzhJU8VCGQn2Q_npPds16V8I9GC-OoGRQFHe85iZivgUmlYEVIIgeXGWKyPPkdzmpwZmMDX1LQHetxbdFAkIqXL4CxNEIRvo5yHpi83o5erNW2XSzwvgARBSP_FZmVv4FcmVt0SicWlzhVqBT6AM5Cf19jGUF88gnhSFnfUYejkjucuw9XI5WNRySNt8G0T7Toklssy6M5GDApzRW9h7m1aZpPb1gBHbwcdr014z7-THdFdTZcbNMH-3NQ13mJuJspg60QTReWnVo6lb_PrEOg7JhePN-XNDEEN_kSpr6vqGinQVlVCjKXL1yAG9MY6nZjd0sAYFDvHddTUsZmhIG6OLa3DnI8kZ50Fpif-YZAudm1QRL3rjUtNhb2O6y4r41Jqn1uVwo8nS1xqx7jEP9TQ2lrBHRt2gLgbm3XRLu1vjyStR5PBr2xQhuin_CcYIP3gVgm7a0aIzIx9ROqrremdKtfW0M0PYUsc4Mm_h7cSGllbBp7W9gdzEt2wm6WirI1oZ0texe2ulQ2gIvSi3GI9rJbI96zDw0ZAeEMubevlV-LRmV3IBqiKkSiO8UC1UJeYlcfa3zyCd9odslsrKm4NbahE38CvJd8MLi947dgmuKsYxLllws9Njf6PJa8sYZHkXRmYgUEqR1cgSb-CfVHV11zK0F28xXsS0HgYpOrlwmCuzRqB7yEbhW9rcO2Za7ppGUJ94gRCgwWzwaAs7eURb5-V1EKNJg6R5Ml5SDfYmhDdCtXT8gB5Gdrxmumj40-n7IZfR-Bm3sevp_BkUOV-bFcKdSfKisxCNw1qZi0j16YW1pILRWnGmGROvov-05YQHkpSWDjBuxGce9AgKmaPL27Fm08rbJ5GLG4_p1fl_W4Sxb0sQ4IFgP0Dpq1mJVvoHtlcR8fnQxOhgbkJ9J2fkR8KVVcyh3dY3HGR5ingjyHkglLDa2cejuhm-euYqPPgXko4psUEDgs4j2mkLWOZbJEdHslKIsnUa8a0QX8Z1V1TyQ");
+}
+
+.weather_forecast{
+	padding: 10px 10px 0 10px;
+	display: inline-block;
+}
+
+.location{
+	font-size: 3em;
+	color: #444;
+}
+
+.current{
+	overflow: auto;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.current .visual {
+	width: 50%;
+	float: left;
+}
+
+.current .description2 {
+	width: 50%;
+	float:  left;
+}
+
+.visual .icon {
+	width: 64px;
+	height: 64px;
+}
+
+.temp {
+	font-size: 2.5em;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.scale {
+	vertical-align: top;
+	display: inline-block;
+	margin-top: 6px;
+	color: #888;
+}
+
+.wind:before{
+	content: "Ветер: ";
+	color: #888;
+}
+
+.precipitate:before{
+	content: "Вероятность осадков: ";
+	color: #888;
+}
+
+.humidity:before{
+	content: "Влажность: ";
+	color: #888;
+}
+
+.week div {
+	vertical-align: middle;
+}
+
+.week_desk{
+	margin: 0 -11px -1px -11px;
+	padding: 10px;
+}
+
+.week_desk div{
+	display: inline-block;
+}
+
+.week_desk .date{
+	font-weight: bold;
+	color: #444;
+}
+
+.week_desk .icon{
+	width: 50px;
+	height: 50px;
+}
+
+.week_desk .week_temp{
+	text-align: center;
+}
+
+.week_desk .temp_high{
+	color: #444;
+}
+
+.week_desk .temp_low{
+	color: #888;
+}
+
+.week_desk .temp_low,
+.week_desk .temp_high{
+	display: block;
+}
+
+@media (max-width: 720px) {
+	.weather_forecast {
+		width: 100%;
+	}
+
+	.week_desk {
+		border-top: 1px solid grey;
+	}
+
+	.week_desk:last-of-type {
+		border-bottom:  1px solid grey;
+	}
+
+	.week_desk .date {
+		width: 30%;
+	}
+
+	.week_desk .week_temp{
+		width: 30%;
+	}
+}
+
+@media (min-width: 721px) {
+	body {
+		font-size: 1em;
+	}
+
+	.weather_forecast {
+		width: 100%;
+		box-shadow: 0 1px 4px grey;
+		border-radius: 15px;
+	}
+
+	.week_desk {
+		display: inline-block;
+		width: 13.5%;
+		margin: 0;
+		border: none;
+		font-size: 0.8em;
+	}
+
+	.week_desk div {
+		display: block;
+		text-align: center;
+	}
+
+	.week_desk .date {
+		text-align: center;
+	}
+
+	.week_desk .temp_low,
+	.week_desk .temp_high {
+		display: inline;
+	}
+
+	.week_desk .week_temp {
+		font-size: 1.25em;
+	}
+
+	.week_desk .icon {
+		width: 64px;
+		height: 64px;
+	}
+}

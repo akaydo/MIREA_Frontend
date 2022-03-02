@@ -1,0 +1,102 @@
+.category-wrap {
+  padding: 10px;
+  background: #e9e9e9;
+  width: 200px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.category-wrap h2 {
+  font-size: 20px;
+  color: rgba(0,0,0,.6);
+  margin: 0 0 10px;
+  padding: 0 5px;
+  position: relative;
+}
+.category-wrap h2:after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #EF0701;
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  box-shadow: -8px -8px #FF3C1F, 0 -8px #FF3C1F, -8px 0 #FF3C1F;
+}
+.category-wrap ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+  border-top: 1px solid rgba(0,0,0,.3);
+}
+.category-wrap li {
+  margin: 12px 0 0 0px;
+}
+.category-wrap a {
+  text-decoration: none;
+  display: block;  
+  font-size: 15px;
+  color: rgba(0,0,0,.6);
+  padding: 5px;
+  position: relative;
+  transition: .3s linear;
+
+}
+.category-wrap a:after {
+  content:"\f18e";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 5px;
+  color: white;
+  transition: .2s linear;
+}
+.category-wrap a:hover {
+  background: #FF3C1F;
+  color: white;
+}
+.top{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  padding: 10px 0 0 0 ;
+  display: block;
+  width: auto;
+  height: auto;
+  color: white;
+} 
+.content video{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.content p{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+.content h3{
+  background: url('https://a.deviantart.net/avatars/v/i/vixenzx.png?6') 240px no-repeat;
+  padding-right: 30px;
+  font-size: 24px;
+  color: rgba(0,0,0,.8);
+  margin: 20px;
+  position: relative;
+}
+.content_culture h3{
+  padding-right: 30px;
+  font-size: 24px;
+  color: rgba(0,0,0,.8);
+  margin: 20px;
+  position: relative;
+}
+.content_culture p{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5; 
+}
+.content_study p{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+.content_study h3{
+  padding-right: 30px;
+  font-size: 24px;
+  color: rgba(0,0,0,.8);
+  margin: 20px;
+  position: relative;
+}

@@ -1,0 +1,104 @@
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-size: 100%;
+    background-color: gainsboro;
+}
+
+.navigation-1 {
+    display: flex;
+    flex-flow: row wrap; /* неперенос.строка*/
+    justify-content: space-around;
+    list-style: none;
+    margin: 0; 
+    background: white;
+    border-color: blue;
+    border-radius: 8px;
+    border: 4px solid dodgerblue;
+  }
+  
+  .navigation-1 a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    color: #191970;
+  }
+  
+  .navigation-1 a:hover {
+    background: #1E90FF;
+  }
+  
+  @media all and (max-width: 720px) {
+    .navigation-1 {
+      flex-flow: column wrap;
+      padding: 0;
+    }
+    .navigation-1 a { 
+      text-align: center; 
+      padding: 10px;
+    }
+    .navigation-1 li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+  .item {
+  padding: 52px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 6px;
+  border: 4px solid dodgerblue;
+}  
+
+.container {
+  display: flex;
+  flex-flow: column;
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper-1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    font-weight: bold;
+    text-align: center;
+}
+
+.wrapper-2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  font-weight: bold;
+  text-align: center;
+} 
+
+.item-a, .item-b, .item-e {
+  flex: 1 100%;
+}
+
+.item-c, .item-d {
+  flex: 1 0px;
+}
+
+@media all and (min-width: 720px) {
+  
+  .item-b { 
+    flex: 2 0px;
+  }
+
+  .item-e { 
+    flex: 1 0px;
+  }
+
+  .item-c {
+    flex: 1 0px;
+  }
+  
+  .item-d {
+    flex: 2 0px;
+  }
+}  
